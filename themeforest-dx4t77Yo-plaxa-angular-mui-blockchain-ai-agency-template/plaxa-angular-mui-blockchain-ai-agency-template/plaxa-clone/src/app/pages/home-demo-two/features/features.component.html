@@ -1,0 +1,21 @@
+<div class="features-area pb-125">
+    <div class="container">
+        <div class="row justify-content-center">
+            @for (content of featureBox; track content) {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature-box bg-primary border-radius mb-25">
+                        <div class="icon">
+                            <i class="{{content.icon}}"></i>
+                        </div>
+                        <h3>
+                            {{content.title}}
+                        </h3>
+                        <p>
+                            {{content.desc}}
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

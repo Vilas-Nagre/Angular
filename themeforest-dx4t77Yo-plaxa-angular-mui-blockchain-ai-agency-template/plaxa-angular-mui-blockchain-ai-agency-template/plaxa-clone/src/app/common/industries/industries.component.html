@@ -1,0 +1,177 @@
+<!-- Default -->
+<div
+    class="industries-area ptb-150 position-relative z-1"
+    [ngClass]="{'d-none': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title fw-medium d-inline-block">
+                Explore Our Industries
+            </span>
+            <h2>
+                <span>Industries That Benefit</span> from Blockchain & AI, Development Company
+            </h2>
+        </div>
+        <div class="row">
+            @for (content of industryItem; track content) {
+                <div class="col-lg-4 col-xl-3 col-sm-6">
+                    <div class="industry-item position-relative">
+                        <h3 class="mb-0">
+                            <a routerLink="/{{content.link}}">
+                                {{content.title}}
+                            </a>
+                        </h3>
+                        <a routerLink="/{{content.link}}" mat-button>
+                            <i class="flaticon-right-arrow-2"></i>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="main-industry-image border-radius text-center">
+            <img src="https://angular.hibootstrap.com/plaxa/assets/images/industries/main-industry.jpg" class="border-radius" alt="main-industry-image">
+        </div>
+    </div>
+    <div class="overlay-bg"></div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div
+    class="industries-area-two ptb-150"
+    *ngIf="router.url === '/index-3'"
+>
+    <div class="container">
+        <div class="section-title text-center ml-auto mr-auto">
+            <span class="sub-title fw-medium d-inline-block">
+                Explore Our Industries
+            </span>
+            <h2>
+                <span>Industries That Benefit</span> from Blockchain & AI, Development Company
+            </h2>
+        </div>
+    </div>
+    <div class="container-fluid industries-slides">
+        <owl-carousel-o [options]="industriesSlides">
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <a routerLink="/industry-details" class="image border-radius d-block">
+                        <img src="assets/images/industries/industry9.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Cyber Security
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Banking & Finance
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                    <a routerLink="/industry-details" class="image style-two border-radius d-block">
+                        <img src="assets/images/industries/industry10.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <a routerLink="/industry-details" class="image border-radius d-block">
+                        <img src="assets/images/industries/industry11.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                    <h3>
+                        <a routerLink="/industry-details">
+                            E-commerce
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Business
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                    <a routerLink="/industry-details" class="image style-two border-radius d-block">
+                        <img src="assets/images/industries/industry12.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <a routerLink="/industry-details" class="image border-radius d-block">
+                        <img src="assets/images/industries/industry9.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Cyber Security
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Banking & Finance
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                    <a routerLink="/industry-details" class="image style-two border-radius d-block">
+                        <img src="assets/images/industries/industry10.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <a routerLink="/industry-details" class="image border-radius d-block">
+                        <img src="assets/images/industries/industry11.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                    <h3>
+                        <a routerLink="/industry-details">
+                            E-commerce
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="industry-box">
+                    <h3>
+                        <a routerLink="/industry-details">
+                            Business
+                        </a>
+                    </h3>
+                    <p>
+                        We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us.
+                    </p>
+                    <a routerLink="/industry-details" class="image style-two border-radius d-block">
+                        <img src="assets/images/industries/industry12.jpg" class="border-radius" alt="industry-image">
+                    </a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

@@ -1,0 +1,215 @@
+.industries-section-title {
+    margin-bottom: 40px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, .10);
+    
+    h3 {
+        font-size: 18px;
+    }
+}
+.industries-list {
+    .industry-item {
+        margin-bottom: 40px;
+        
+        .image {
+            img {
+                width: 54px;
+                margin-bottom: -4px;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            margin-left: 13px;
+            padding-bottom: 15px;
+            
+            a {
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+        &::before {
+            left: 0;
+            right: 0;
+            content: '';
+            height: 1px;
+            bottom: 13px;
+            margin-left: 67px;
+            position: absolute;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, .10);
+        }
+        &:hover {
+            &::before {
+                background: var(--primaryColor);
+            }
+        }
+    }
+}
+::ng-deep {
+    .industries-list {
+        .link-btn {
+            &.mdc-button {
+                .mdc-button__label {
+                    padding-right: 80px;
+                    color: var(--primaryColor);
+                    
+                    i {
+                        margin-top: 3px;
+                    }
+                    &::before {
+                        width: 100%;
+                        background-color: var(--primaryColor);
+                    }
+                    &:hover {
+                        color: var(--whiteColor);
+
+                        &::before {
+                            background-color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .industries-section-title {
+        max-width: 100%;
+        margin-bottom: 25px;
+        padding-bottom: 12px;
+        
+        h3 {
+            font-size: 15px;
+        }
+    }
+    .industries-list {
+        max-width: 100%;
+    
+        .industry-item {
+            margin-bottom: 25px;
+            
+            .image {
+                img {
+                    width: 40px;
+                }
+            }
+            h3 {
+                padding-bottom: 0;
+                font-size: 15px;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+    ::ng-deep {
+        .industries-list {
+            .link-btn {
+                &.mdc-button {
+                    .mdc-button__label {
+                        padding-right: 40px;
+                        
+                        i {
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .industries-section-title {
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 12px;
+        
+        h3 {
+            font-size: 16px;
+        }
+    }
+    .industries-list {
+        max-width: 100%;
+    
+        .industry-item {
+            margin-bottom: 30px;
+            
+            h3 {
+                margin-left: 13px;
+                font-size: 16px;
+            }
+        }
+    }
+    ::ng-deep {
+        .industries-list {
+            .link-btn {
+                &.mdc-button {
+                    .mdc-button__label {
+                        padding-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .industries-section-title {
+        max-width: 830px;
+        margin-bottom: 35px;
+        padding-bottom: 12px;
+        
+        h3 {
+            font-size: 17px;
+        }
+    }
+    .industries-list {
+        max-width: 830px;
+    
+        .industry-item {
+            margin-bottom: 35px;
+            
+            .image {
+                img {
+                    width: 54px;
+                    margin-bottom: -4px;
+                }
+            }
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+    ::ng-deep {
+        .industries-list {
+            .link-btn {
+                &.mdc-button {
+                    .mdc-button__label {
+                        padding-right: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,84 @@
+.awards-area {
+    padding-bottom: 100px;
+}
+.award-item {
+    margin-bottom: 50px;
+
+    h3 {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 230px;
+        margin: {
+            top: 20px;
+            left: auto;
+            right: auto;
+        };
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .awards-area {
+        padding-bottom: 30px;
+    }
+    .award-item {
+        margin-bottom: 25px;
+
+        h3 {
+            margin-top: 15px;
+            line-height: 1.5;
+            font-size: 16px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .awards-area {
+        padding-bottom: 55px;
+    }
+    .award-item {
+        margin-bottom: 25px;
+
+        h3 {
+            margin-top: 20px;
+            max-width: 100%;
+            font-size: 17px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .awards-area {
+        padding-bottom: 50px;
+    }
+    .award-item {
+        h3 {
+            font-size: 17px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .awards-area {
+        padding-bottom: 75px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

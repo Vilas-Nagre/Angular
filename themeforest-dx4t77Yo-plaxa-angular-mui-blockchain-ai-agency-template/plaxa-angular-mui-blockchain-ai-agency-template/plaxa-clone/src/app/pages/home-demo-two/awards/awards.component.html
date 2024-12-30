@@ -1,0 +1,16 @@
+<div class="awards-area pt-150">
+    <div class="container-fluid">
+        <owl-carousel-o [options]="awardsSlides">
+            @for (item of awardItem; track item) {
+                <ng-template carouselSlide>
+                    <div class="award-item text-center">
+                        <img [src]="item.img" alt="award-image">
+                        <h3 class="mb-0">
+                            {{item.title}}
+                        </h3>
+                    </div>
+                </ng-template>
+            }
+        </owl-carousel-o>
+    </div>
+</div>

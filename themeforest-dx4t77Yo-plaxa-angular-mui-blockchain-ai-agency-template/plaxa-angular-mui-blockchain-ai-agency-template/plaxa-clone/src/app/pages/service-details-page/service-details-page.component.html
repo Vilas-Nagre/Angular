@@ -1,0 +1,113 @@
+<app-page-banner />
+
+<!-- Service Details -->
+<div class="service-details-area ptb-150">
+    <div class="container">
+        <div class="service-details-description ml-auto mr-auto">
+            <img src="https://angular.hibootstrap.com/plaxa/assets/images/services/service-details1.jpg" class="border-radius" alt="service-details-image">
+            <h3>
+                Pragmatic Product
+            </h3>
+            <p>
+                The product we develop is designed to serve systemic and prove itself sustainable for a long time. We're focused on solutions, performed not in theory, but in practice. Doloribus non molestiae ab laudantium veritatis. Minus minima suscipit placeat velit voluptatibus, ab quas dolores quisquam temporibus, similique tempora officia possimus totam vitae, dolorum incidunt non soluta nisi reprehenderit dignissimos culpa fugiat quaerat? Odit reprehenderit reiciendis quas harum modi illum, dolor distinctio! Et, animi distinctio. Molestias quam possimus accusantium minima obcaecati sit deleniti totam repellat.
+            </p>
+            <p>
+                Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our professional this to It uses a dictionary of 2200 Latin d with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonableis therefore always free from repetition, injected humour, anything embarrassing hidden in the middle of text.
+            </p>
+        </div>
+        <div class="service-details-features ml-auto mr-auto">
+            <div class="row justify-content-center">
+                @for (content of featureBox; track content) {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature-box mb-25">
+                            <div class="icon">
+                                <i class="{{content.icon}}"></i>
+                            </div>
+                            <h3>
+                                {{content.title}}
+                            </h3>
+                            <p>
+                                {{content.desc}}
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="service-details-content ml-auto mr-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="content">
+                        <h3>
+                            Pragmatic Product
+                        </h3>
+                        <p>
+                            Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our professional.
+                        </p>
+                        <ul class="pl-0 mb-0 list-unstyled">
+                            <li class="position-relative">
+                                <i class="flaticon-check-mark-2"></i>
+                                <h4>
+                                    Solution This Business
+                                </h4>
+                                <p>
+                                    Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team professional this to It uses a dictionary.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="flaticon-check-mark-2"></i>
+                                <h4>
+                                    Business Of Growth
+                                </h4>
+                                <p>
+                                    Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team professional this to It uses a dictionary.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="image">
+                        <img src="https://angular.hibootstrap.com/plaxa/assets/images/services/service-details2.jpg" class="border-radius" alt="service-details-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-details-benefits ml-auto mr-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="image">
+                        <img src="https://angular.hibootstrap.com/plaxa/assets/images/services/service-details3.jpg" class="border-radius" alt="service-details-image">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="content">
+                        <h3>
+                            Service Benefits
+                        </h3>
+                        <ul class="pl-0 mb-0 list-unstyled">
+                            <li class="position-relative">
+                                <i class="flaticon-check-mark-1"></i>
+                                <p>
+                                    It's a good time to get more about each other, share values and discuss your project.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="flaticon-check-mark-1"></i>
+                                <p>
+                                    Share values and discuss your project. It's a good time to get more about each other.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="flaticon-check-mark-1"></i>
+                                <p>
+                                    It's a good time to get more about each other, share values and discuss your project.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

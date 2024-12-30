@@ -1,0 +1,113 @@
+.meet-with-an-expert-box {
+    padding: 80px;
+    margin-top: -150px;
+    background: linear-gradient(93deg, #400d64 0%, #7b13ff 49.48%, #ff82f3 100%);
+
+    h2 {
+        margin-top: -4px;
+        line-height: 1.2;
+        font-size: 60px;
+
+        span {
+            color: #7b8f94;
+        }
+    }
+    .btn-box {
+        text-align: right;
+
+        .default-btn {
+            &.mdc-button {
+                color: var(--blackColor);
+                background: var(--whiteColor);
+                transition: var(--transition);
+
+                &::before {
+                    display: none;
+                }
+                &:hover {
+                    color: var(--whiteColor);
+                    background: var(--blackColor);
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .meet-with-an-expert-box {
+        padding: 50px 15px;
+        text-align: center;
+        margin-top: -60px;
+    
+        h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 23px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .meet-with-an-expert-box {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .meet-with-an-expert-box {
+        text-align: center;
+        padding: 70px 50px;
+        margin-top: -80px;
+    
+        h2 {
+            margin-top: 0;
+            font-size: 42px;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .meet-with-an-expert-box {
+        padding: 80px 60px;
+        margin-top: -100px;
+    
+        h2 {
+            margin-top: 0;
+            font-size: 50px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .meet-with-an-expert-box {
+        margin-top: -125px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

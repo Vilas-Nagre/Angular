@@ -1,0 +1,26 @@
+.bg-white {
+    color: var(--blackColor);
+
+    p {
+        color: rgba(0, 0, 0, .65);
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: var(--blackColor);
+    }
+}
+.bg-image {
+    background: {
+        image: url(../../../assets/images/bg-overlay/bg-overlay2.jpg);
+        position: top center;
+        repeat: no-repeat;
+        size: contain;
+    };
+}
+.bg-image2 {
+    background: {
+        image: url(../../../assets/images/bg-overlay/bg-overlay4.jpg);
+        position: top center;
+        repeat: no-repeat;
+        size: contain;
+    };
+}

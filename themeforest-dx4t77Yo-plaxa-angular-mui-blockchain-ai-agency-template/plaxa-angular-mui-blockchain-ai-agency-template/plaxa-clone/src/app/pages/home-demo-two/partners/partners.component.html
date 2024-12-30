@@ -1,0 +1,13 @@
+<div class="container-fluid pl-0 pr-0">
+    <div class="partners-slides">
+        <owl-carousel-o [options]="partnersSlides">
+            @for (item of partnerItem; track item) {
+                <ng-template carouselSlide>
+                    <div class="partner-item">
+                        <img [src]="item.img" alt="partner-image">
+                    </div>
+                </ng-template>
+            }
+        </owl-carousel-o>
+    </div>
+</div>

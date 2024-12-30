@@ -1,0 +1,110 @@
+.lets-talk-box {
+    padding: 80px;
+    margin-top: -150px;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    .sub-title {
+        padding: 5px 15px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        color: var(--bodyColor);
+        background-color: rgba(255, 255, 255, .03);
+        border: 1px solid rgba(255, 255, 255, .09);
+    }
+    h2 {
+        line-height: 1.2;
+        font-size: 60px;
+
+        span {
+            color: #d2f4ff;
+        }
+    }
+    .btn-box {
+        text-align: right;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .lets-talk-box {
+        padding: 50px 15px;
+        text-align: center;
+        margin-top: -60px;
+    
+        .sub-title {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .lets-talk-box {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .lets-talk-box {
+        text-align: center;
+        padding: 70px 50px;
+        margin-top: -80px;
+    
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        .btn-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .lets-talk-box {
+        padding: 80px 60px;
+        margin-top: -100px;
+    
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .lets-talk-box {
+        margin-top: -125px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

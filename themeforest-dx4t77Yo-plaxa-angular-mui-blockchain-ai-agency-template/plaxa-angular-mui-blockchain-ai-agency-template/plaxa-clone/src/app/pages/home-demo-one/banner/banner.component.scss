@@ -1,0 +1,297 @@
+.banner-area {
+    padding-top: 210px;
+    
+    .banner-bg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 80.5%;
+        position: absolute;
+        background: {
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.banner-content {
+    margin-bottom: 40px;
+    
+    h1 {
+        line-height: 1.14;
+        margin-bottom: 25px;
+        letter-spacing: -2.6px;
+        font: {
+            size: 130px;
+            weight: normal;
+        };
+        span {
+            color: #7b8f94;
+        }
+    }
+    .btn-box {
+        margin-top: 50px;
+
+        .default-btn {
+            margin-right: 35px;
+        }
+    }
+}
+.funfacts-partners {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: {
+        top: 130px;
+        right: 50px;
+        bottom: 100px;
+    };
+    .funfacts {
+        .box {
+            .number {
+                margin-bottom: 12px;
+                color: #d2f4ff;
+                font: {
+                    size: 70px;
+                    weight: 500;
+                    family: var(--headingFontFamily);
+                };
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .partners {
+        img {
+            margin-top: 25px;
+        }
+    }
+}
+.banner-image {
+    margin-left: -50px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .banner-area {
+        padding-top: 120px;
+
+        .banner-bg {
+            height: 70%;
+        }
+    }
+    .banner-content {
+        margin-bottom: 0;
+        
+        h1 {
+            letter-spacing: -.5px;
+            margin-bottom: 18px;
+            line-height: 1.2;
+            font-size: 38px;
+        }
+        .btn-box {
+            margin-top: 18px;
+    
+            .default-btn {
+                margin: {
+                    right: 0;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+    .funfacts-partners {
+        height: auto;
+        display: block;
+        flex-direction: unset;
+        justify-content: unset;
+        padding: {
+            top: 0;
+            right: 0;
+            bottom: 0;
+        };
+        .funfacts {
+            .box {
+                margin-top: 25px;
+
+                .number {
+                    font-size: 30px;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .banner-image {
+        margin: {
+            left: 0;
+            top: 25px;
+        };
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .banner-content {
+        .btn-box {
+            .default-btn {
+                margin: {
+                    right: 20px;
+                    bottom: 0;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .banner-area {
+        padding-top: 150px;
+
+        .banner-bg {
+            height: 50%;
+        }
+    }
+    .banner-content {
+        margin-bottom: 35px;
+        
+        h1 {
+            font-size: 60px;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+        .btn-box {
+            margin-top: 25px;
+    
+            .default-btn {
+                margin-right: 25px;
+            }
+        }
+    }
+    .funfacts-partners {
+        height: auto;
+        display: block;
+        flex-direction: unset;
+        justify-content: unset;
+        padding: {
+            top: 0;
+            right: 0;
+            bottom: 0;
+        };
+        .funfacts {
+            margin-bottom: 10px;
+
+            .box {
+                .number {
+                    margin-bottom: 10px;
+                    font-size: 42px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .banner-image {
+        margin: {
+            left: 0;
+            top: 40px;
+        };
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .banner-area {
+        padding-top: 150px;
+        
+        .banner-bg {
+            height: 80%;
+        }
+    }
+    .banner-content {
+        margin-bottom: 35px;
+        
+        h1 {
+            letter-spacing: -1.5px;
+            margin-bottom: 25px;
+            font-size: 85px;
+        }
+        .btn-box {
+            margin-top: 35px;
+        }
+    }
+    .funfacts-partners {
+        padding: {
+            top: 60px;
+            right: 40px;
+            bottom: 60px;
+        };
+        .funfacts {
+            .box {
+                .number {
+                    font-size: 50px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .banner-image {
+        margin-left: -40px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .banner-area {
+        padding-top: 190px;
+        
+        .banner-bg {
+            height: 78%;
+        }
+    }
+    .banner-content {
+        h1 {
+            letter-spacing: -2px;
+            font-size: 110px;
+        }
+    }
+    .funfacts-partners {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        };
+        .funfacts {
+            .box {
+                .number {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

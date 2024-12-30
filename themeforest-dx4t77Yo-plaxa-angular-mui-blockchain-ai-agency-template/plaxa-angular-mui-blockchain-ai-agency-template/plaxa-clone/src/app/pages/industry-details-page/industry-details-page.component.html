@@ -1,0 +1,90 @@
+<app-page-banner />
+
+<!-- Industry Details -->
+<div class="industry-details-area ptb-150">
+    <div class="container">
+        <div class="industry-details-description ml-auto mr-auto">
+            <img src="https://angular.hibootstrap.com/plaxa/assets/images/industries/industry-details1.jpg" class="border-radius" alt="industry-details-image">
+            <h3>
+                Cyber Security
+            </h3>
+            <p>
+                We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us. The MedTech landscape is undergoing rapid transformation with the emergence of innovative devices products, integrated platforms, and digitally powered selling and service models. At Beratung, we specialize in assisting clients in navigating these changes by helping them develop the right strategies and execute them flawlessly.
+            </p>
+        </div>
+        <div class="industry-details-features ml-auto mr-auto">
+            <div class="row justify-content-center">
+                @for (content of featureBox; track content) {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature-box mb-25">
+                            <h5>
+                                {{content.title}}
+                            </h5>
+                            <p>
+                                {{content.desc}}
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="industry-details-results ml-auto mr-auto">
+            <img src="https://angular.hibootstrap.com/plaxa/assets/images/industries/industry-details2.jpg" class="border-radius" alt="industry-details-image">
+            <h3>
+                Project Results
+            </h3>
+            <p>
+                We contribute to the implementation of a project from step 0: we can already help our partners by giving them advice & for a suggestions, when they contact us. The MedTech landscape is undergoing rapid transformation with the emergence of innovative devices and products, integrated platforms, and digitally powered selling and service models. At Beratung.
+            </p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="content position-relative">
+                        <i class="flaticon-check-mark-2"></i>
+                        <h4>
+                            We conduct a thorough analysis
+                        </h4>
+                        <p>
+                            Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team for a professional this to It uses a dictionary.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="content position-relative">
+                        <i class="flaticon-check-mark-2"></i>
+                        <h4>
+                            Growth strategy roadmap
+                        </h4>
+                        <p>
+                            Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team for a professional this to It uses a dictionary.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="content position-relative">
+                        <i class="flaticon-check-mark-2"></i>
+                        <h4>
+                            Adjacency growth strategy
+                        </h4>
+                        <p>
+                            Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team for a professional this to It uses a dictionary.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="content position-relative">
+                        <i class="flaticon-check-mark-2"></i>
+                        <h4>
+                            We conduct in-depth assessments
+                        </h4>
+                        <p>
+                            Will reenergize your ome and enhance your life. From everyday housekeeping to routine cleanings, our team for a professional this to It uses a dictionary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-industries ml-auto mr-auto">
+            <app-more-industries />
+        </div>
+    </div>
+</div>

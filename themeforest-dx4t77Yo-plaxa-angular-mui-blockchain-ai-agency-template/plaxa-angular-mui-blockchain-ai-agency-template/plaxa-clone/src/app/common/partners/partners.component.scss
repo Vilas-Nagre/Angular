@@ -1,0 +1,17 @@
+.partner-item {
+    text-align: center;
+    
+    img {
+        width: auto !important;
+        display: inline-block !important;
+    }
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .container-fluid {
+        max-width: 1920px;
+    }
+
+}

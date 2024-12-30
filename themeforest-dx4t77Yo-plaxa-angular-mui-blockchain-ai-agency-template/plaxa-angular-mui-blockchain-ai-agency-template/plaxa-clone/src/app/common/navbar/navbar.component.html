@@ -1,0 +1,212 @@
+<div
+    class="navbar-area"
+    [ngClass]="{'sticky': isSticky}"
+>
+    <div class="container">
+        <nav
+            class="navbar navbar-expand-lg"
+            [class.active]="classApplied"
+        >
+            <a
+                class="navbar-brand"
+                routerLink="/"
+            >
+                <img src="assets/images/logo.svg" alt="logo">
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                (click)="toggleClass()"
+            >
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav font-mulish">
+                    <li class="nav-item">
+                        <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link"> -->
+                            <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Home
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 1
+                                </a>
+                            </li> -
+                             <li class="nav-item">
+                                <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 2
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Home Demo - 3
+                                </a>
+                            </li> 
+                        </ul>-->
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/industries" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Industries
+                        </a>
+                         <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Industries
+                        </a> 
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/industries" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Industries
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/industry-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Industry Details
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Services
+                        </a>
+                        <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/services" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/service-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Service Details
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown nav-link">
+                            What We Are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/team" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/case-studies" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Case Studies
+                                </a>
+                                <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Case Studies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/case-studies" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Case Studies
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/case-study-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Case Study Details
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/careers" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Careers
+                                </a>
+                                <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Careers
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/careers" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Careers
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/job-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Job Details
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/testimonials" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    FAQ
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Privacy Policy
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Terms & Conditions
+                                </a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    404 Error Page
+                                </a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Blog
+                        </a>
+                        <!-- <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Blog
+                        </a> -->
+                        <!-- <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/blog" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Blog Details
+                                </a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class="other-options d-md-flex align-items-center">
+                    <a href="tel:1-007-753-8039" class="phone-number d-flex align-items-center">
+                        <i class="ri-phone-fill"></i>
+                        +91 9370690448
+                    </a>
+                    <a routerLink="/contact-us" mat-flat-button color="primary" class="default-btn">
+                        Contact Us <i class="flaticon-right-arrow-2"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

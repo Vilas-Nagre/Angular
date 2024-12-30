@@ -1,0 +1,32 @@
+<div class="industries-area pb-150">
+    <div class="container">
+        <div class="industries-section-title ml-auto mr-auto">
+            <h3 class="mb-0">
+                Industries
+            </h3>
+        </div>
+        <div class="industries-list ml-auto mr-auto">
+            <div class="row">
+                @for (content of industryItem; track content) {
+                    <div class="col-lg-3 col-sm-4 col-6">
+                        <div class="industry-item position-relative d-flex align-items-center">
+                            <a routerLink="/{{content.link}}" class="d-block image">
+                                <img [src]="content.img" class="rounded-circle" alt="industry-image">
+                            </a>
+                            <h3 class="mb-0">
+                                <a routerLink="/{{content.link}}">
+                                    {{content.title}}
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="text-center">
+                <a routerLink="/industries" mat-button class="link-btn">
+                    View All Industries <i class="flaticon-right-arrow-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

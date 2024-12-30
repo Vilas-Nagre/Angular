@@ -1,0 +1,178 @@
+<div class="what-we-provide-area ptb-150">
+    <div class="container">
+        <div class="section-title">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <span class="sub-title style-two fw-medium d-inline-block">
+                        What We Provide
+                    </span>
+                    <h2>
+                        <span>Delivering Creative</span> Solutions for all Digital-First Company
+                    </h2>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <p>
+                        Using our AI solutions, it becomes possible to perform even those operations efficiently, rapidly, and precisely that previously could not have been performed at all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="what-we-provide-tabs">
+                    <div class="tabs-list pl-0 mt-0 mb-0 list-unstyled">
+                        <li [ngClass]="{'active': currentTab === 'tab1'}">
+                            <div (click)="switchTab($event, 'tab1')">
+                                Artificial Intelligence
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab2'}">
+                            <div (click)="switchTab($event, 'tab2')">
+                                Consultancy Solution
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab3'}">
+                            <div (click)="switchTab($event, 'tab3')">
+                                Business Intelligence
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab4'}">
+                            <div (click)="switchTab($event, 'tab4')">
+                                Cloud Development
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab5'}">
+                            <div (click)="switchTab($event, 'tab5')">
+                                Data Analytics Services
+                            </div>
+                        </li>
+                    </div>
+                    <div class="btn-box">
+                        <a routerLink="/services" mat-flat-button color="primary" class="default-btn">
+                            View More Services <i class="flaticon-right-arrow-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab1'">
+                    <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Machine Learning
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Natural Language Processing
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Computer Vision
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/what-we-provide/what-we-provide1.jpg" alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab2'">
+                    <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Science
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/what-we-provide/what-we-provide2.jpg" alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab3'">
+                    <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Brainstorming
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Detailed Assessment
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                E2E Solutions
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/what-we-provide/what-we-provide3.jpg" alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab4'">
+                    <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Machine Learning
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Natural Language Processing
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Computer Vision
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/what-we-provide/what-we-provide4.jpg" alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab5'">
+                    <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Data Science
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="assets/images/what-we-provide/what-we-provide5.jpg" alt="what-we-provide-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

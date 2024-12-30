@@ -1,0 +1,133 @@
+.team-area {
+    padding-bottom: 105px;
+}
+.single-team-member {
+    margin-bottom: 45px;
+
+    .image {
+        overflow: hidden;
+        margin-bottom: 25px;
+        
+        img {
+            border: 1px solid rgba(255, 255, 255, .09);
+            transition: var(--transition);
+            margin-bottom: -4px;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .designation {
+        padding-left: 26px;
+        color: var(--bodyColor);
+
+        i {
+            transform: translateY(-50%);
+            color: var(--primaryColor);
+            position: absolute;
+            font-size: 18px;
+            top: 50%;
+            left: 0;
+        }
+    }
+    .socials {
+        a {
+            line-height: 1;
+            font-size: 25px;
+            color: var(--bodyColor);
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .team-area {
+        padding-bottom: 35px;
+    }
+    .single-team-member {
+        margin-bottom: 25px;
+    
+        .image {
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .socials {
+            a {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .team-area {
+        padding-bottom: 55px;
+    }
+    .single-team-member {
+        margin-bottom: 25px;
+    
+        .image {
+            margin-bottom: 22px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .team-area {
+        padding-bottom: 75px;
+    }
+    .single-team-member {
+        margin-bottom: 25px;
+    
+        .image {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .team-area {
+        padding-bottom: 90px;
+    }
+    .single-team-member {
+        margin-bottom: 35px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

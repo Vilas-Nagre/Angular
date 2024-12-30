@@ -1,0 +1,314 @@
+p {
+    color: #797979;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: var(--blackColor);
+}
+a {
+    color: var(--blackColor);
+}
+.case-study-item {
+    border: 1px solid rgba(123, 19, 255, .10);
+    padding: 80px 0 0 80px;
+
+    .content {
+        padding: {
+            right: 90px;
+            bottom: 80px;
+        };
+        .sub-title {
+            padding: 5px 15px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            color: var(--whiteColor);
+            background-color:  var(--primaryColor);
+            border: 1px solid  var(--primaryColor);
+        }
+        h2 {
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-size: 60px;
+    
+            a {
+                span {
+                    color: #705295;
+                    transition: var(--transition);
+                }
+                &:hover {
+                    color: var(--primaryColor);
+    
+                    span {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+        .funfacts {
+            border-top: 1px solid #e2e2e2;
+            padding-top: 35px;
+            margin-top: 33px;
+
+            .box {
+                h3 {
+                    background: linear-gradient(43deg, #400D64 5%, #7B13FF 10%, #FF82F3 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 6px;
+                    font-size: 28px;
+                }
+                span {
+                    font-size: 18px;
+                    color: #797979;
+                }
+            }
+        }
+    }
+    .btn-box {
+        text-align: right;
+        padding: {
+            right: 80px;
+            bottom: 60px;
+        };
+    }
+    .image {
+        margin-left: -41.5px;
+
+        .main-image {
+            border-radius: 10px 0 0 0;
+            margin: {
+                right: -1px;
+                bottom: -5px;
+            };
+        }
+        .logo {
+            left: 35px;
+            bottom: 35px;
+            position: absolute;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .case-study-item {
+        padding: 20px 15px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 20px;
+            };
+            .sub-title {
+                margin-bottom: 10px;
+            }
+            h2 {
+                margin-bottom: 11px;
+                font-size: 28px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .funfacts {
+                padding-top: 15px;
+                margin-top: 15px;
+    
+                .box {
+                    h3 {
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: left;
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .image {
+            margin-left: 0;
+    
+            .main-image {
+                border-radius: 10px;
+                margin: {
+                    right: 0;
+                    bottom: -4px;
+                };
+            }
+            .logo {
+                left: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .case-study-item {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .case-study-item {
+        padding: 30px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+            .sub-title {
+                margin-bottom: 12px;
+            }
+            h2 {
+                margin-bottom: 15px;
+                font-size: 42px;
+            }
+            p {
+                font-size: 15px;
+            }
+            .funfacts {
+                padding-top: 22px;
+                margin-top: 22px;
+    
+                .box {
+                    h3 {
+                        font-size: 22px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: left;
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .image {
+            margin-left: 0;
+    
+            .main-image {
+                border-radius: 10px;
+                margin: {
+                    right: 0;
+                    bottom: -4px;
+                };
+            }
+            .logo {
+                left: 25px;
+                bottom: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .case-study-item {
+        padding: 40px 0 0 40px;
+    
+        .content {
+            padding: {
+                right: 15px;
+                bottom: 40px;
+            };
+            h2 {
+                margin-bottom: 15px;
+                font-size: 50px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .funfacts {
+                padding-top: 25px;
+                margin-top: 25px;
+    
+                .box {
+                    h3 {
+                        font-size: 26px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: right;
+            padding: {
+                right: 40px;
+                bottom: 40px;
+            };
+        }
+        .image {
+            margin-left: -15px;
+    
+            .logo {
+                left: 30px;
+                bottom: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .case-study-item {
+        padding: 60px 0 0 60px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 60px;
+            };
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+            .funfacts {
+                padding-top: 30px;
+                margin-top: 30px;
+            }
+        }
+        .btn-box {
+            padding: {
+                right: 60px;
+                bottom: 50px;
+            };
+        }
+        .image {
+            margin-left: 0;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

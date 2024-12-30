@@ -1,0 +1,34 @@
+<app-page-banner />
+
+<!-- Team -->
+<div class="team-area ptb-150">
+    <div class="container">
+        <div class="row justify-content-center">
+            @for (content of teamCard; track content) {
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-team-member">
+                        <div class="image border-radius">
+                            <img [src]="content.img" class="border-radius" alt="team-member-image">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3>
+                                    {{content.name}}
+                                </h3>
+                                <span class="designation d-block position-relative">
+                                    <i class="ri-briefcase-4-line"></i>
+                                    {{content.designation}}
+                                </span>
+                            </div>
+                            <div class="socials d-flex align-items-center">
+                                <a href="{{content.linkedinLink}}" class="d-block" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

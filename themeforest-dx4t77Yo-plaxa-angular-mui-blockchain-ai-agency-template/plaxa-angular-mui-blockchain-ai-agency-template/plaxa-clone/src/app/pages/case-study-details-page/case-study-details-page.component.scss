@@ -1,0 +1,586 @@
+.case-study-details-description {
+    margin-bottom: 50px;
+    max-width: 1095px;
+
+    img {
+        margin-bottom: 36px;
+    }
+    .categories {
+        a {
+            font-size: 15px;
+            padding: 5px 15px;
+            border-radius: 30px;
+            color: var(--bodyColor);
+            background-color: rgba(255, 255, 255, .03);
+            border: 1px solid rgba(255, 255, 255, .09);
+            margin: {
+                right: 15px;
+                bottom: 20px;
+            };
+            &:hover {
+                color: var(--whiteColor);
+                border-color: var(--primaryColor);
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 18px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.case-study-details-funfacts {
+    max-width: 1095px;
+    margin-bottom: 25px;
+
+    .box {
+        margin-bottom: 25px;
+
+        .number {
+            margin-bottom: 12px;
+            color: #d2f4ff;
+            font: {
+                size: 70px;
+                weight: 500;
+                family: var(--headingFontFamily);
+            };
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+.case-study-details-benefits {
+    max-width: 1095px;
+    margin-bottom: 50px;
+    
+    .content {
+        h3 {
+            margin-bottom: 30px;
+        }
+        ul {
+            li {
+                padding-left: 35px;
+                margin-bottom: 30px;
+
+                i {
+                    left: 0;
+                    top: 5px;
+                    font-size: 22px;
+                    color: #d2f4ff;
+                    position: absolute;
+                }
+                p {
+                    font-size: 18px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .image {
+        margin-left: 65px;
+
+        img {
+            margin-bottom: -4px;
+        }
+    }
+}
+.case-study-details-results {
+    max-width: 1095px;
+    margin-bottom: 10px;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+    .content {
+        margin-bottom: 35px;
+        padding-left: 40px;
+
+        i {
+            left: 0;
+            top: .4px;
+            font-size: 22px;
+            position: absolute;
+            color: var(--primaryColor);
+        }
+        h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+}
+.case-study-details-review {
+    max-width: 872px;
+    margin-top: 115px;
+
+    .review-section-title {
+        margin-bottom: 40px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid rgba(255, 255, 255, .10);
+        
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .review-item {
+        p {
+            line-height: 1.5;
+            font: {
+                size: 28px;
+                weight: 500;
+                family: var(--headingFontFamily);
+            };
+        }
+        .info {
+            margin-top: 50px;
+    
+            .user-image {
+                img {
+                    border-radius: 50%;
+                    margin-bottom: -4px;
+                    width: 46px !important;
+                    display: inline-block !important;
+                }
+            }
+            .user-info {
+                margin-left: 15px;
+    
+                h4 {
+                    margin-bottom: 5px;
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                    };
+                }
+                span {
+                    font-size: 15px;
+                    color: #797979;
+                }
+            }
+            .company-logo {
+                img {
+                    margin-bottom: -4px;
+                    width: auto !important;
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .case-study-details-description {
+        margin-bottom: 35px;
+        max-width: 100%;
+    
+        img {
+            margin-bottom: 15px;
+        }
+        .categories {
+            a {
+                font-size: 13.5px;
+                margin: {
+                    right: 10px;
+                    bottom: 12px;
+                };
+            }
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    .case-study-details-funfacts {
+        max-width: 100%;
+        margin-bottom: 10px;
+    
+        .box {
+            .number {
+                font-size: 30px;
+                margin-bottom: 8px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .case-study-details-benefits {
+        max-width: 100%;
+        margin-bottom: 35px;
+        
+        .image {
+            margin: {
+                left: 0;
+                top: 25px;
+            };
+        }
+        .content {
+            h3 {
+                margin-bottom: 15px;
+            }
+            ul {
+                li {
+                    padding-left: 24px;
+                    margin-bottom: 15px;
+    
+                    i {
+                        top: 3px;
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .case-study-details-results {
+        max-width: 100%;
+        margin-bottom: 0;
+    
+        h3 {
+            margin-bottom: 25px;
+        }
+        .content {
+            margin-bottom: 25px;
+            padding-left: 32px;
+    
+            i {
+                top: .5px;
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .case-study-details-review {
+        max-width: 100%;
+        margin-top: 0;
+    
+        .review-section-title {
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            
+            h3 {
+                font-size: calc(1.3rem + 0.6vw);
+            }
+        }
+        .review-item {
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            .info {
+                margin-top: 15px;
+    
+                .user-info {
+                    margin-left: 13px;
+    
+                    h4 {
+                        font-size: 15px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .company-logo {
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .case-study-details-description {
+        margin-bottom: 40px;
+        max-width: 100%;
+    
+        img {
+            margin-bottom: 20px;
+        }
+        .categories {
+            a {
+                font-size: 14px;
+                margin: {
+                    right: 15px;
+                    bottom: 15px;
+                };
+            }
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 13px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .case-study-details-funfacts {
+        margin-bottom: 15px;
+        max-width: 100%;
+    
+        .box {
+            .number {
+                margin-bottom: 10px;
+                font-size: 42px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    .case-study-details-benefits {
+        max-width: 100%;
+        margin-bottom: 40px;
+        
+        .image {
+            margin: {
+                left: 0;
+                top: 25px;
+            };
+        }
+        .content {
+            h3 {
+                margin-bottom: 20px;
+            }
+            ul {
+                max-width: 440px;
+
+                li {
+                    padding-left: 25px;
+                    margin-bottom: 15px;
+    
+                    i {
+                        top: 4.5px;
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .case-study-details-results {
+        max-width: 100%;
+        margin-bottom: 15px;
+    
+        h3 {
+            margin-bottom: 30px;
+        }
+        .content {
+            margin-bottom: 25px;
+            padding-left: 35px;
+    
+            i {
+                top: .8px;
+                font-size: 20px;
+            }
+            h4 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    .case-study-details-review {
+        max-width: 100%;
+        margin-top: 0;
+    
+        .review-section-title {
+            margin-bottom: 30px;
+            padding-bottom: 12px;
+            
+            h3 {
+                font-size: calc(1.3rem + 0.6vw);
+            }
+        }
+        .review-item {
+            p {
+                font-size: 20px;
+            }
+            .info {
+                margin-top: 20px;
+    
+                .user-info {
+                    h4 {
+                        font-size: 16px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .case-study-details-description {
+        max-width: 100%;
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    .case-study-details-funfacts {
+        max-width: 100%;
+    
+        .box {
+            .number {
+                font-size: 55px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .case-study-details-benefits {
+        max-width: 100%;
+        
+        .content {
+            h3 {
+                margin-bottom: 25px;
+            }
+            ul {
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 25px;
+    
+                    i {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .case-study-details-results {
+        max-width: 100%;
+    
+        h3 {
+            margin-bottom: 35px;
+        }
+        .content {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .case-study-details-review {
+        max-width: 100%;
+        margin-top: 15px;
+    
+        .review-section-title {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            
+            h3 {
+                font-size: calc(1.3rem + 0.6vw);
+            }
+        }
+        .review-item {
+            p {
+                font-size: 22px;
+            }
+            .info {
+                margin-top: 30px;
+        
+                .user-info {
+                    h4 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .case-study-details-description {
+        max-width: 1000px;
+    
+        p {
+            font-size: 17px;
+        }
+    }
+    .case-study-details-funfacts {
+        max-width: 1000px;
+
+        .box {
+            .number {
+                font-size: 65px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    .case-study-details-benefits {
+        max-width: 1000px;
+        
+        .image {
+            margin-left: 50px;
+        }
+        .content {
+            ul {
+                li {
+                    margin-bottom: 25px;
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .case-study-details-results {
+        max-width: 1000px;
+    }
+    .case-study-details-review {
+        max-width: 870px;
+        margin-top: 95px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

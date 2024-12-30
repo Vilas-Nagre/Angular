@@ -1,0 +1,341 @@
+<div class="case-studies-area pb-125">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="section-title text-center ml-auto mr-auto">
+            <span class="sub-title fw-medium d-inline-block">
+                Case Studies
+            </span>
+            <h2>
+                <span>Created Unique</span> Blockchain & AI Solutions Both
+            </h2>
+        </div>
+
+        <!-- Default -->
+        <div
+            class="row"
+            [ngClass]="{'d-none': router.url === '/index-3'}"
+        >
+            <div class="col-xl-7 col-md-12">
+                <div class="case-study-box mb-25">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="content">
+                                <div class="text">
+                                    <h3>
+                                        <a routerLink="/case-study-details">
+                                            Expert Elicitation Global Survey
+                                        </a>
+                                    </h3>
+                                    <ul class="p-0 mt-0 mb-0 list-unstyled">
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                450+
+                                            </span>
+                                            System Integrations
+                                        </li>
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                890h+
+                                            </span>
+                                            Manual Work Reduced
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn">
+                                    <a routerLink="/case-study-details" mat-button class="link-btn">
+                                        View Case Study <i class="flaticon-right-arrow-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="image">
+                                <div class="logo text-right">
+                                    <img src="assets/images/case-studies/case-study-logo1.svg" alt="logo-image">
+                                </div>
+                                <div class="main-image">
+                                    <img src="assets/images/case-studies/case-study1.jpg" alt="case-study-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-md-12">
+                <div class="case-study-box style-two mb-25">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12">
+                            <div class="content">
+                                <div class="text">
+                                    <h3>
+                                        <a routerLink="/case-study-details">
+                                            Supply Chain Dashboard
+                                        </a>
+                                    </h3>
+                                    <ul class="p-0 mt-0 mb-0 list-unstyled">
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                09k+
+                                            </span>
+                                            QPS Performance
+                                        </li>
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                90+
+                                            </span>
+                                            Cost Reduction
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn">
+                                    <a routerLink="/case-study-details" mat-button class="link-btn">
+                                        View Case Study <i class="flaticon-right-arrow-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <div class="image">
+                                <div class="logo text-right">
+                                    <img src="assets/images/case-studies/case-study-logo2.svg" alt="logo-image">
+                                </div>
+                                <div class="main-image">
+                                    <img src="assets/images/case-studies/case-study2.jpg" alt="case-study-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-md-12">
+                <div class="case-study-box mb-25">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12">
+                            <div class="content">
+                                <div class="text">
+                                    <h3>
+                                        <a routerLink="/case-study-details">
+                                            Financial Intermediation Platform
+                                        </a>
+                                    </h3>
+                                    <ul class="p-0 mt-0 mb-0 list-unstyled">
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                2.9million+
+                                            </span>
+                                            Shopify Stores
+                                        </li>
+                                        <li>
+                                            <span class="d-block text-primary">
+                                                04million+
+                                            </span>
+                                            Pages Processed Daily
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn">
+                                    <a routerLink="/case-study-details" mat-button class="link-btn">
+                                        View Case Study <i class="flaticon-right-arrow-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-12">
+                            <div class="image">
+                                <div class="logo text-right">
+                                    <img src="assets/images/case-studies/case-study-logo3.svg" alt="logo-image">
+                                </div>
+                                <div class="main-image">
+                                    <img src="assets/images/case-studies/case-study3.jpg" alt="case-study-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Only for Home Demo - 3 -->
+        <div
+            class="case-studies-slides ml-auto mr-auto"
+            *ngIf="router.url === '/index-3'"
+           
+        >
+            <owl-carousel-o [options]="caseStudiesSlides">
+                <ng-template carouselSlide>
+                    <div class="case-study-item position-relative">
+                        <div class="image position-relative">
+                            <img src="https://angular.hibootstrap.com/plaxa/assets/images/case-studies/case-study7.jpg" class="border-radius" alt="case-study-image">
+                        </div>
+                        <div class="logo bg-white border-radius">
+                            <img src="assets/images/case-studies/case-study-logo5.svg" alt="case-study-logo">
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="info">
+                                        <h3>
+                                            <a routerLink="/case-study-details">
+                                                Expert Elicitation Global Survey
+                                            </a>
+                                        </h3>
+                                        <div class="categories">
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                Web Application
+                                            </a>
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                Elicitation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="funfacts">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        450+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        System Integrations
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        890h+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        Manual Work Reduced
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="case-study-item position-relative">
+                        <div class="image position-relative">
+                            <img src="assets/images/case-studies/case-study8.jpg" class="border-radius" alt="case-study-image">
+                        </div>
+                        <div class="logo bg-white border-radius">
+                            <img src="assets/images/case-studies/case-study-logo4.svg" alt="case-study-logo">
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="info">
+                                        <h3>
+                                            <a routerLink="/case-study-details">
+                                                Supply Chain Dashboard
+                                            </a>
+                                        </h3>
+                                        <div class="categories">
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                Dashboard
+                                            </a>
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                Mobile
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="funfacts">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        2.9million+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        Shopify Stores
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        04million+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        Manual Work Reduced
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="case-study-item position-relative">
+                        <div class="image position-relative">
+                            <img src="assets/images/case-studies/case-study9.jpg" class="border-radius" alt="case-study-image">
+                        </div>
+                        <div class="logo bg-white border-radius">
+                            <img src="assets/images/case-studies/case-study-logo6.svg" alt="case-study-logo">
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="info">
+                                        <h3>
+                                            <a routerLink="/case-study-details">
+                                                E-commerce Scraping
+                                            </a>
+                                        </h3>
+                                        <div class="categories">
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                E-commerce
+                                            </a>
+                                            <a routerLink="/case-studies" class="d-inline-block">
+                                                Digital
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="funfacts">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        864+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        QPS Performance
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-6 col-md-4">
+                                                <div class="box">
+                                                    <h3>
+                                                        90+
+                                                    </h3>
+                                                    <span class="d-block">
+                                                        Cost Reduction
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+
+    </div>
+</div>

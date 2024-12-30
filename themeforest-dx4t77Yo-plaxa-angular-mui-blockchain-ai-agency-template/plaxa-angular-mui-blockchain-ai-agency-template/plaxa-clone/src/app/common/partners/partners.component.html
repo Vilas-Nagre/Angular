@@ -1,0 +1,22 @@
+<div class="pb-150">
+    <div class="container">
+        <div class="section-title text-center ml-auto mr-auto">
+            <span class="sub-title text-white mb-0 fw-medium d-inline-block">
+                We worked with global brands with <span class="text-primary">59K+</span> company
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid pl-0 pr-0">
+        <div class="partners-slides">
+            <owl-carousel-o [options]="partnersSlides">
+                @for (item of partnerItem; track item) {
+                    <ng-template carouselSlide>
+                        <div class="partner-item">
+                            <img [src]="item.img" alt="partner-image">
+                        </div>
+                    </ng-template>
+                }
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

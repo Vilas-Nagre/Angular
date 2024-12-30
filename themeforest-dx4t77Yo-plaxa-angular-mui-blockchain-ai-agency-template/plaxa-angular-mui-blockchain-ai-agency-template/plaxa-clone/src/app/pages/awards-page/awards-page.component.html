@@ -1,0 +1,21 @@
+<app-page-banner />
+
+<!-- Awards -->
+<div class="awards-area pt-150">
+    <div class="container">
+        <div class="row justify-content-center">
+            @for (item of awardItem; track item) {
+                <div class="col-lg-3 col-6 col-md-4">
+                    <div class="award-item text-center">
+                        <img [src]="item.img" alt="award-image">
+                        <h3 class="mb-0">
+                            {{item.title}}
+                        </h3>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<app-partners />

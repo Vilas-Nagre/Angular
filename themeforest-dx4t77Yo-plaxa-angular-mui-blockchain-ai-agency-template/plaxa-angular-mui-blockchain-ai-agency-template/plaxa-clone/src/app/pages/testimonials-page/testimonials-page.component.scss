@@ -1,0 +1,159 @@
+.testimonial-item {
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, .09);
+    background: {
+        color: var(--blackColor);
+        image: url(../../../assets/images/bg-overlay/bg-overlay1.png);
+        position: bottom left;
+        repeat: no-repeat;
+        size: cover;
+    };
+    p {
+        font: {
+            size: 18px;
+            weight: 500;
+            family: var(--headingFontFamily);
+        };
+    }
+    .info {
+        margin-top: 50px;
+
+        .user-image {
+            img {
+                border-radius: 50%;
+                width: 46px !important;
+                display: inline-block !important;
+            }
+        }
+        .user-info {
+            margin-left: 15px;
+
+            h4 {
+                margin-bottom: 5px;
+                font: {
+                    size: 18px;
+                    weight: 500;
+                };
+            }
+            span {
+                font-size: 15px;
+                color: var(--bodyColor);
+            }
+        }
+        .company-logo {
+            img {
+                margin-bottom: -4px;
+                width: auto !important;
+                display: inline-block !important;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .testimonial-item {
+        padding: 20px 15px;
+        
+        p {
+            font-size: 14px;
+        }
+        .info {
+            margin-top: 15px;
+
+            .user-info {
+                margin-left: 13px;
+
+                h4 {
+                    font-size: 15px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .company-logo {
+                margin-top: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .testimonial-item {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .testimonial-item {
+        padding: 25px;
+        
+        p {
+            font-size: 15px;
+        }
+        .info {
+            margin-top: 20px;
+
+            .user-info {
+                h4 {
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .company-logo {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .testimonial-item {
+        padding: 28px;
+        
+        p {
+            font-size: 16px;
+        }
+        .info {
+            margin-top: 25px;
+
+            .user-info {
+                h4 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .testimonial-item {
+        padding: 30px;
+        
+        p {
+            font-size: 16px;
+        }
+        .info {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

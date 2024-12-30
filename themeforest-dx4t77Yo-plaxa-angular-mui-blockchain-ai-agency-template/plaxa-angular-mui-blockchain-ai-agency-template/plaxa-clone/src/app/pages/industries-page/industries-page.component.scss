@@ -1,0 +1,122 @@
+.industries-area {
+    padding-bottom: 110px;
+}
+.industry-box {
+    margin-bottom: 40px;
+
+    .image {
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        img {
+            margin-bottom: -4px;
+            transition: var(--transition);
+        }
+    }
+    h3 {
+        margin-bottom: 12px;
+        font-size: 28px;
+
+        a {
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    p {
+        font-size: 18px;
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .industries-area {
+        padding-bottom: 30px;
+    }
+    .industry-box {
+        margin-bottom: 25px;
+
+        .image {
+            margin-bottom: 18px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .industries-area {
+        padding-bottom: 55px;
+    }
+    .industry-box {
+        margin-bottom: 25px;
+
+        .image {
+            margin-bottom: 22px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .industries-area {
+        padding-bottom: 60px;
+    }
+    .industry-box {
+        .image {
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .industries-area {
+        padding-bottom: 85px;
+    }
+    .industry-box {
+        p {
+            font-size: 17px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
